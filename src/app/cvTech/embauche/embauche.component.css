@@ -1,0 +1,11 @@
+
+img{
+  width: 80px;
+  height: 70px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.list-group-item{
+  border-radius: 3px;
+}

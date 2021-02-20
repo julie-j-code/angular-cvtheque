@@ -18,7 +18,7 @@ export class EmbaucheService {
 
   embaucher(personne:Personne) : void{
     const index = this.personnes.indexOf(personne);
-    if(index>=0){
+    if(index<0){
       this.personnes.push(personne)
     }else{
       alert(`${personne.name} est déjà sélectionné(e)`)
