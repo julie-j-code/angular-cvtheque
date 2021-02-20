@@ -1,0 +1,34 @@
+<div class="container-fluid">
+
+
+  <h1 class="font-weight-lighter">
+    CVThèque Angular for trainning
+  </h1>
+  <div class="row mt-5">
+
+    <div class="col-md-5 ">
+      <app-liste-cv (selectedPersonne)="selectPersonne($event)" [personnes]="personnes"></app-liste-cv>
+    </div>
+    <div class="col-md-6">
+      <ng-template [ngIf]="selectedPersonne" [ngIfElse]="loading">
+        <div class="col-12">
+          <app-detail-cv [personne]="selectedPersonne"></app-detail-cv>
+        </div>
+      </ng-template>
+
+      <ng-template #loading>
+        <div class="jumbotron">Un petit exercice pour travailler le transfert d'information de components parents à
+          components enfants et respectivement à l'aide des @input et @output. L'occasion également de travailler la
+          directive structurelle
+          *ngif. Ici, plus spécifiquement, j'ai choisi :
+          <code class="d-inline">
+  ng-template [ngIf]="selectedPersonne" [ngIfElse]="loading"
+</code>Sinon, pour pour l'affichage du détail des CV, j'ai opté pour une rotating-card que vous verrez à l'oeuvre en
+          faisant votre marché parmis les candidats fictifs. Heureusement pour vous, je ne fais pas partie de la liste.
+          Moi, je suis pas dans le scop.
+        </div>
+      </ng-template>
+    </div>
+  </div>
+
+</div>
