@@ -8,11 +8,12 @@ import { DeleteCvComponent } from './cvTheque/delete-cv/delete-cv.component';
 const routes: Routes = [
   {path:'', redirectTo : 'cv', pathMatch: 'full'},
 
-  {path:'cv', component:CvComponent},
-  {path:'cv/:id', component:DetailComponent},
-  {path:'cv/delete/:id', component:DeleteCvComponent},
-  {path:'cv/add', component:AddCvComponent},
-
+  {path:'cv', children:[
+    {path:'', component:CvComponent},
+    {path:'delete/:id', component:DeleteCvComponent},
+    {path:'add', component:AddCvComponent},
+    {path:':id', component:DetailComponent}
+  ]}
 ];
 
 @NgModule({

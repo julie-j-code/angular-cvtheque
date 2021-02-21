@@ -13,25 +13,29 @@
 
       <ng-template #loading>
         <div class="jumbotron">
-          <h1 class="font-weight-lighter">
+          <h1 class="h3 font-weight-lighter">
             CVThèque Angular for trainning
           </h1>
-          Un petit exercice pour travailler le transfert d'information de components parents à
-          components enfants et respectivement à l'aide des @input et @output. L'occasion également de travailler la
-          directive structurelle
-          *ngif. Ici, plus spécifiquement, j'ai choisi :
+          Un petit exercice pour travailler dans un premier temps le transfert d'information de components parents à
+          components enfants et respectivement à l'aide des @input et @output. Puis des directives structurelles. Ici,
+          plus spécifiquement, j'ai choisi :
           <code class="d-inline">
   ng-template [ngIf]="selectedPersonne" [ngIfElse]="loading"
-</code>Sinon, pour pour l'affichage du détail des CV, j'ai opté pour une rotating-card que vous verrez à l'oeuvre en
-          faisant votre marché parmis les candidats fictifs. Heureusement pour vous, je ne fais pas partie de la liste.
-          Moi, je suis pas dans le scop.
+</code>
+          Sinon, pour l'affichage du détail des CV, au click sur les items de la liste à gauche, j'ai opté pour une rotating-card que vous verrez à l'oeuvre en
+          faisant votre marché parmis les candidats.
+          <hr>
+          En date du 21.02.21, j'ai rajouté les routes et des components pour pouvoir à terme ajouter des CV.
+          Potentiellement, il est déjà possible d'embaucher, sans pouvoir débaucher. Une aberration, vous en
+          conviendrez. Mais tout va bientôt rentrer dans l'ordre et vous pourrez virer chacun avec une facilité
+          déconcertante !
         </div>
       </ng-template>
     </div>
-            <!-- différent des suggestions du cours -->
-            <div class="row">
-              <app-embauche></app-embauche>
-            </div>
+    <!-- différent des suggestions du cours -->
+    <div class="row">
+      <app-embauche></app-embauche>
+    </div>
   </div>
 
 </div>

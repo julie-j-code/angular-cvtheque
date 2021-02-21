@@ -1,1 +1,19 @@
-<p>add-cv works!</p>
+
+<div class="container">
+  <form #formulaire = "ngForm" class="form-group">
+    <label for="name">Name</label>
+    <input id="name" type="text" ngModel name="name" class="form-control">
+    <label for="firstname">Name</label>
+    <input id="firstname" type="text" ngModel name="firstname" class="form-control">
+    <label for="name">Job</label>
+    <input id="job" type="text" ngModel name="job" class="form-control">
+    <label for="name">Age</label>
+    <input id="age" type="text" ngModel name="age" class="form-control">
+    <label for="cin">Cin</label>
+    <input id="cin" type="text" ngModel name="cin" class="form-control">
+    <label for="name">Path</label>
+    <input id="path" type="text" ngModel name="path" class="form-control">
+    <hr>
+    <button class="btn btn-info my-3" (click)="addPersonne(formulaire)">Valider</button>
+  </form>
+</div>
