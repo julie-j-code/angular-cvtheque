@@ -1,9 +1,4 @@
 <div class="container-fluid">
-
-
-  <h1 class="font-weight-lighter">
-    CVThèque Angular for trainning
-  </h1>
   <div class="row mt-5">
 
     <div class="col-md-5 ">
@@ -17,7 +12,11 @@
       </ng-template>
 
       <ng-template #loading>
-        <div class="jumbotron">Un petit exercice pour travailler le transfert d'information de components parents à
+        <div class="jumbotron">
+          <h1 class="font-weight-lighter">
+            CVThèque Angular for trainning
+          </h1>
+          Un petit exercice pour travailler le transfert d'information de components parents à
           components enfants et respectivement à l'aide des @input et @output. L'occasion également de travailler la
           directive structurelle
           *ngif. Ici, plus spécifiquement, j'ai choisi :
@@ -29,10 +28,10 @@
         </div>
       </ng-template>
     </div>
-    <!-- différent des suggestions du cours -->
-    <div class="col-12">
-      <app-embauche></app-embauche>
-    </div>
+            <!-- différent des suggestions du cours -->
+            <div class="row">
+              <app-embauche></app-embauche>
+            </div>
   </div>
 
 </div>

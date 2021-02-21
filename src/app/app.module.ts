@@ -8,6 +8,10 @@ import { DetailCvComponent } from './cvTech/detail-cv/detail-cv.component';
 import { ItemCvComponent } from './cvTech/item-cv/item-cv.component';
 import { ListeCvComponent } from './cvTech/liste-cv/liste-cv.component';
 import { EmbaucheComponent } from './cvTech/embauche/embauche.component';
+import { HeaderComponent } from './header/header.component';
+import { DetailComponent } from './cvTech/detail/detail.component';
+import { AddCvComponent } from './cvTheque/add-cv/add-cv.component';
+import { DeleteCvComponent } from './cvTheque/delete-cv/delete-cv.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ CvComponent,
     DetailCvComponent,
     ItemCvComponent,
     ListeCvComponent,
-    EmbaucheComponent
+    EmbaucheComponent,
+    HeaderComponent,
+    DetailComponent,
+    AddCvComponent,
+    DeleteCvComponent
   ],
   imports: [
     BrowserModule,

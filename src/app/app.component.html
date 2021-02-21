@@ -8,26 +8,7 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <style>
-  :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
-  }
-
-
-
+  /*
   svg#rocket {
     width: 80px;
     position: absolute;
@@ -41,8 +22,14 @@
     top: 10px;
     right: 180px;
     z-index: -10;
-  }
+  } */
 
+*,:after,:before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
   a,
   a:visited,
   a:hover {
@@ -66,7 +53,7 @@
     align-items: center;
   }
 
-  .github-star-badge {
+  /* .github-star-badge {
     color: #24292e;
     display: flex;
     align-items: center;
@@ -90,38 +77,23 @@
     height: 16px;
     width: 16px;
     margin-right: 4px;
-  }
+  } */
 
-  svg#clouds {
+  /* svg#clouds {
     position: fixed;
     bottom: -160px;
     left: -230px;
     z-index: -10;
     width: 1920px;
-  }
-
-
-  /* Responsive Styles */
-  @media screen and (max-width: 767px) {
-
-    svg#rocket-smoke {
-      right: 120px;
-      transform: rotate(-5deg);
-    }
-  }
-
-  @media screen and (max-width: 575px) {
-    svg#rocket-smoke {
-      display: none;
-      visibility: hidden;
-    }
-  }
+  } */
 </style>
 
 <!-- Toolbar -->
+<div class="container-fluid">
+  <app-header></app-header>
+</div>
 
-<div class="container container-fluid">
-
-  <app-cv></app-cv>
-
+<div class="container my-3">
+  <router-outlet></router-outlet>
+  <!-- <app-cv></app-cv> -->
 </div>
