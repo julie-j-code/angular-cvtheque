@@ -4,6 +4,7 @@ import { CvComponent } from './cvTech/cv/cv.component';
 import { DetailComponent } from './cvTech/detail/detail.component';
 import { AddCvComponent } from './cvTheque/add-cv/add-cv.component';
 import { DeleteCvComponent } from './cvTheque/delete-cv/delete-cv.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {path:'', redirectTo : 'cv', pathMatch: 'full'},
@@ -13,7 +14,9 @@ const routes: Routes = [
     {path:'delete/:id', component:DeleteCvComponent},
     {path:'add', component:AddCvComponent},
     {path:':id', component:DetailComponent}
-  ]}
+  ]},
+
+  {path:'login', component:LoginComponent}
 ];
 
 @NgModule({

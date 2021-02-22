@@ -1,0 +1,12 @@
+<div class="container">
+  <form #formlogin="ngForm" class="form-group">
+    <label for="email">email</label>
+    <input type="text" class="form-control" name="email" id="email" required minLength="10" #emailInput="ngModel" ngModel>
+    <div class="alert alert-danger" *ngIf="emailInput.invalid && emailInput.touched">L'email doit avoir au minimum 6 charactères histoire de tester des directives structurelles associées aux propriétés de mon formulaire</div>
+    <label for="pwd">password (char min 6)</label>
+    <input type="text" class="form-control" name="pwd" id="pwd" required minLength="6" #pwdInput="ngModel" ngModel>
+    <div class="alert alert-danger" *ngIf="pwdInput.invalid && pwdInput.touched">Le password doit avoir au minimum 6 charactères</div>
+
+    <button [disabled]="formlogin.invalid" class="btn btn-info mt-3" (click)="login(formlogin)">Valider</button>
+  </form>
+</div>
