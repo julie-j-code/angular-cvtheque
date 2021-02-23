@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CvComponent } from './cvTech/cv/cv.component';
 import { DetailComponent } from './cvTech/detail/detail.component';
-import { AddCvComponent } from './cvTheque/add-cv/add-cv.component';
-import { DeleteCvComponent } from './cvTheque/delete-cv/delete-cv.component';
+import { AddCvComponent } from './cvTech/add-cv/add-cv.component';
+import { DeleteCvComponent } from './cvTech/delete-cv/delete-cv.component';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [

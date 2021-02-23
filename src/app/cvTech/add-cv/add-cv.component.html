@@ -1,0 +1,22 @@
+
+<div class="container">
+  <!-- <form id="currency-edit" #formulaire="ngForm" class="form-group" (ngSubmit)="addPersonne(formulaire.value)" > -->
+    <form (ngSubmit)="onSubmit(formulaire)" #formulaire="ngForm">
+    <!-- <form #formulaire="ngForm" class="form-group" > -->
+    <label for="name">Name</label>
+    <input required id="name" type="text" ngModel name="name" class="form-control">
+    <label for="firstname">Firstname</label>
+    <input required id="firstname" type="text" ngModel name="firstname" class="form-control">
+    <label required for="name">Job</label>
+    <input id="job" type="text" ngModel name="job" class="form-control">
+    <label for="name">Age</label>
+    <input required min="0" max="100" id="age" type="text" ngModel name="age" class="form-control">
+    <label for="cin">Cin</label>
+    <input required id="cin" type="text" ngModel name="cin" class="form-control">
+    <label for="name">Path</label>
+    <input id="path" type="text" ngModel name="path" class="form-control">
+    <hr>
+    <button [disabled]="formulaire.invalid" type="submit" class="btn btn-info my-3">Valider</button>
+    <!-- <button [disabled]="formulaire.invalid" class="btn btn-info my-3" (click)="addPersonne(formulaire)">Valider</button> -->
+  </form>
+</div>

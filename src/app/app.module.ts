@@ -11,9 +11,10 @@ import { ListeCvComponent } from './cvTech/liste-cv/liste-cv.component';
 import { EmbaucheComponent } from './cvTech/embauche/embauche.component';
 import { HeaderComponent } from './header/header.component';
 import { DetailComponent } from './cvTech/detail/detail.component';
-import { AddCvComponent } from './cvTheque/add-cv/add-cv.component';
-import { DeleteCvComponent } from './cvTheque/delete-cv/delete-cv.component';
+import { AddCvComponent } from './cvTech/add-cv/add-cv.component';
+import { DeleteCvComponent } from './cvTech/delete-cv/delete-cv.component';
 import { LoginComponent } from './login/login.component';
+import { DefaultImagePipe } from './cvTech/default-image.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ CvComponent,
     DetailComponent,
     AddCvComponent,
     DeleteCvComponent,
-    LoginComponent
+    LoginComponent,
+    DefaultImagePipe
   ],
   imports: [
     BrowserModule,

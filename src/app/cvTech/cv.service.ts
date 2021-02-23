@@ -26,4 +26,12 @@ export class CvService {
     return personne;
 
   }
+
+  addPersonne(personne:Personne){
+personne.id=this.personnes[this.personnes.length-1].id+1;
+// console.log(personne);
+    this.personnes.push(personne);
+  }
+
+
 }

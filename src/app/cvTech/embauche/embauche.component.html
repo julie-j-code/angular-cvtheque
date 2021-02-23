@@ -1,8 +1,8 @@
-<div *ngIf="personnes" class="row border-darken-1 p-5">
+<div *ngIf="personnes" class="row border-darken-1 p-5 justify-content-between">
   <div *ngFor="let personne of personnes" class="col-4">
 
-        <img src="../../../assets/images/{{personne.path}}" alt="{{personne.firstname}}">
-        <div class="h5 my-2 font-weight-lighter">{{personne.firstname}}</div>
+        <img src="../../../assets/images/{{personne.path|defaultImage}}" alt="{{personne.firstname}}">
+        <div class="h5 my-2 font-weight-lighter">{{personne.firstname|titlecase}}</div>
 
 
   </div>

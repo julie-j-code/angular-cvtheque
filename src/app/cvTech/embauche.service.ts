@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { isJSDocThisTag } from 'tsd/libraries/typescript';
 import { Personne } from '../Model/Personne';
 
 @Injectable({
